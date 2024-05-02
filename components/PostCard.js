@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function PostCard(props){
     const {post} = props;
     return(
-        <Link href={''} className="unstyled">
+        <Link href={`/recipe/${post.slug}`} className="unstyled">
             <div className="postCard">
                 <h3>{post.title}</h3>
                 <p>{post.bio}</p>
